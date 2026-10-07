@@ -1,0 +1,131 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "PulseGrid home" [ref=e5] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e11]: PULSEGRID
+    - button "[ ] Connect wallet" [ref=e19] [cursor=pointer]:
+      - generic [ref=e20]: "[ ]"
+      - text: Connect wallet
+  - main [ref=e21]:
+    - region [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: LIVE ON ROBINHOOD CHAIN
+        - heading "READ THE PULSE." [level=1] [ref=e26]: READ THEPULSE.
+        - paragraph [ref=e27]: Read the pulse. Make your call. Trade live questions with fast moves, tiny fees, and a sharper view of the crowd.
+        - generic [ref=e28]:
+          - link "Explore markets ->" [ref=e29] [cursor=pointer]:
+            - /url: "#markets"
+            - text: Explore markets
+            - generic [ref=e30]: "->"
+          - button "Get started ->" [ref=e31] [cursor=pointer]:
+            - text: Get started
+            - generic [ref=e32]: "->"
+      - generic "Market stats" [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: PULSEGRID // MARKET DESK
+          - generic [ref=e36]: "* ONLINE"
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: MARKETS LIVE
+            - strong [ref=e40]: "128"
+          - generic [ref=e41]:
+            - generic [ref=e42]: 24H VOLUME
+            - strong [ref=e43]: $2.4M
+          - generic [ref=e44]:
+            - generic [ref=e45]: AVG. FEE
+            - strong [ref=e46]: 0.2%
+        - generic [ref=e60]:
+          - generic [ref=e61]: RBH-01
+          - generic [ref=e62]: INSERT COIN *
+    - region [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: // FIND YOUR SIGNAL
+          - heading "MARKET PULSE" [level=2] [ref=e67]
+        - generic [ref=e68]: 128 markets live
+      - generic [ref=e70]:
+        - tablist "Market categories" [ref=e71]:
+          - button "All markets" [ref=e72] [cursor=pointer]
+          - button "Trending" [ref=e73] [cursor=pointer]
+          - button "Crypto" [ref=e74] [cursor=pointer]
+          - button "Culture" [ref=e75] [cursor=pointer]
+          - button "Sports" [ref=e76] [cursor=pointer]
+        - generic [ref=e77]:
+          - generic [aria-hidden] [ref=e78]: "?"
+          - searchbox "Search markets" [ref=e79]: Ethereum
+      - article [ref=e113]:
+        - generic [ref=e114]:
+          - generic [aria-hidden] [ref=e115]: $
+          - generic [ref=e116]:
+            - heading "ETH flips BTC on daily fees?" [level=3] [ref=e117]
+            - paragraph [ref=e118]:
+              - text: Ethereum // June 30, 2025
+              - emphasis [ref=e119]: HOT
+        - generic [ref=e120]:
+          - strong [ref=e121]: 21%
+          - text: "YES"
+        - generic [ref=e122]: +4.7% 24H MOVE
+        - generic [ref=e123]: $98,260 VOLUME
+        - generic [ref=e124]:
+          - button "YES" [active] [ref=e125] [cursor=pointer]
+          - button "NO" [ref=e126] [cursor=pointer]
+    - generic [ref=e167]:
+      - generic [ref=e168]:
+        - generic [ref=e169]: $
+        - generic [ref=e170]:
+          - text: // YOUR SIGNALS
+          - heading "PORTFOLIO" [level=2] [ref=e171]
+      - generic [ref=e172]:
+        - generic [ref=e173]: AVAILABLE BALANCE
+        - strong [ref=e174]: "---"
+      - generic [ref=e175]:
+        - generic [ref=e176]: OPEN POSITIONS
+        - strong [ref=e177]: "00"
+      - button "Connect to view ->" [ref=e178] [cursor=pointer]
+    - generic [ref=e179]:
+      - generic [ref=e180]: // THREE EASY MOVES
+      - heading "MAKE YOUR CALL." [level=2] [ref=e181]
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - generic [ref=e184]: "01"
+          - heading "Read a question" [level=3] [ref=e185]
+          - paragraph [ref=e186]: Find a market where your view is stronger than the crowd.
+        - generic [ref=e187]:
+          - generic [ref=e188]: "02"
+          - heading "Choose YES or NO" [level=3] [ref=e189]
+          - paragraph [ref=e190]: Back your call with USDC on Robinhood Chain.
+        - generic [ref=e191]:
+          - generic [ref=e192]: "03"
+          - heading "Track the pulse" [level=3] [ref=e193]
+          - paragraph [ref=e194]: When the outcome lands, winners split the pool.
+  - contentinfo [ref=e195]:
+    - generic [ref=e196]: PULSEGRID / 2025
+    - generic [ref=e197]:
+      - text: BUILT ON
+      - link "ROBINHOOD CHAIN" [ref=e198] [cursor=pointer]:
+        - /url: https://explorer.testnet.chain.robinhood.com/address/0x0813A921Ad488C0604d63a4D673536730fF7E725
+      - text: // 0x0813...E725
+    - generic [ref=e199]: READ THE PULSE. MAKE YOUR CALL.
+  - dialog [ref=e221]:
+    - button "Close trade dialog" [ref=e222] [cursor=pointer]: × X
+    - generic [ref=e223]: LEVEL 03 // TRADE
+    - heading "ETH flips BTC on daily fees?" [level=2] [ref=e224]
+    - paragraph [ref=e225]: Ethereum // June 30, 2025
+    - generic [ref=e226]:
+      - button [ref=e227] [cursor=pointer]:
+        - text: "YES"
+        - strong [ref=e228]: 21%
+      - button [ref=e229] [cursor=pointer]:
+        - text: "NO"
+        - strong [ref=e230]: 79%
+    - generic [ref=e231]:
+      - text: AMOUNT
+      - generic [ref=e232]: USDC
+      - spinbutton "AMOUNT USDC" [ref=e233]: "25"
+    - generic [ref=e234]:
+      - generic [ref=e235]: Potential payout
+      - strong [ref=e236]: $119.05
+    - button "Connect wallet to trade ->" [ref=e237] [cursor=pointer]:
+      - text: Connect wallet to trade
+      - generic [ref=e238]: "->"
+    - paragraph [ref=e239]: Trades settle automatically when the market resolves.
