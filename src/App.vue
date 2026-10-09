@@ -35,7 +35,7 @@ const markets = [
   { id: 3, tag: 'CRYPTO-03', category: 'Crypto', question: 'Does SOL flip BTC on daily fees?', closes: 'Closes Jun 30, 2025', closesIn: 'closes in 2d', yes: 21, volume: '$98,260', move: 4.7, hot: true },
   { id: 4, tag: 'SPORTS-04', category: 'Sports', question: 'Will the home team take the crown?', closes: 'Closes Jun 18, 2025', closesIn: 'closes in 11d', yes: 57, volume: '$311,850', move: 1.3, hot: false },
   { id: 5, tag: 'CULTURE-05', category: 'Culture', question: 'Does a pixel classic get a remake?', closes: 'Closes Sep 12, 2025', closesIn: 'closes in 76d', yes: 76, volume: '$76,103', move: 10.1, hot: true },
-  { id: 6, tag: 'CRYPTO-06', category: 'Crypto', question: 'Solana testnet TVL over $1B?', closes: 'Closes Dec 31, 2025', closesIn: 'closes in 186d', yes: 34, volume: '$205,600', move: -0.8, hot: false },
+  { id: 6, tag: 'CRYPTO-06', category: 'Crypto', question: 'Solana daily active addresses over 5M?', closes: 'Closes Dec 31, 2025', closesIn: 'closes in 186d', yes: 34, volume: '$205,600', move: -0.8, hot: false },
 ]
 
 const boardStats = computed(() => {
@@ -133,7 +133,6 @@ function confirmTrade() {
       </nav>
 
       <div class="top-actions">
-        <span class="network-chip"><span class="dot"></span> Solana testnet</span>
         <button class="wallet-button" type="button" @click="walletOpen = true">
           <svg class="wallet-icon" viewBox="0 0 20 16" aria-hidden="true" focusable="false">
             <path d="M2 2.5h16v11H2z" />
@@ -149,7 +148,7 @@ function confirmTrade() {
         <div class="hero-copy">
           <p class="eyebrow">
             <span class="pulse"></span>
-            {{ programDeployed ? 'Live on Solana testnet' : 'Solana testnet preview' }}
+            {{ programDeployed ? 'Live on Solana' : 'Solana preview' }}
           </p>
           <h1 id="hero-title">
             <span class="h1-line">ASK THE PIT.</span>
@@ -165,9 +164,9 @@ function confirmTrade() {
             <a class="button button--ghost" href="#how">How the pit works <span aria-hidden="true">&#8594;</span></a>
           </div>
           <dl class="hero-facts">
-            <div><dt>Chain</dt><dd>Solana testnet</dd></div>
+            <div><dt>Chain</dt><dd>Solana</dd></div>
             <div><dt>Settlement</dt><dd>On-chain, automatic</dd></div>
-            <div><dt>Test SOL only</dt><dd>No real value</dd></div>
+            <div><dt>Preview mode</dt><dd>No real value</dd></div>
           </dl>
         </div>
 
@@ -185,7 +184,7 @@ function confirmTrade() {
           <div class="console-spark" aria-hidden="true">
             <span v-for="bar in 16" :key="bar" :style="{ height: `${18 + ((bar * 37) % 74)}%` }"></span>
           </div>
-          <p class="console-foot"><span>PIT-01</span><span>Solana testnet // demo data</span></p>
+          <p class="console-foot"><span>PIT-01</span><span>Demo board data</span></p>
         </aside>
       </section>
 
@@ -268,7 +267,7 @@ function confirmTrade() {
           <div>
             <b>02</b>
             <h3>Take a side</h3>
-            <p>Back YES or NO with test SOL on Solana testnet. Both sides sit in the same pool, on the same rules.</p>
+            <p>Back YES or NO with SOL. Both sides sit in the same pool, on the same rules.</p>
           </div>
           <div>
             <b>03</b>
@@ -311,7 +310,7 @@ function confirmTrade() {
       <span>Ask the pit. Take the side.</span>
       <span>
         Built on
-        <a :href="programExplorerUrl" target="_blank" rel="noreferrer">SOLANA TESTNET</a>
+        <a :href="programExplorerUrl" target="_blank" rel="noreferrer">SOLANA</a>
         // {{ shortProgram }}
       </span>
     </footer>
@@ -323,7 +322,7 @@ function confirmTrade() {
         </button>
         <p class="kicker">// {{ selectedMarket.tag }} &middot; {{ selectedMarket.closesIn }}</p>
         <h2 id="trade-title">{{ selectedMarket.question }}</h2>
-        <p class="dialog-sub">{{ selectedMarket.closes }} &middot; settled on Solana testnet</p>
+        <p class="dialog-sub">{{ selectedMarket.closes }} &middot; settled on-chain</p>
 
         <div class="sides" role="group" aria-label="Choose a side">
           <button type="button" :class="{ active: selectedSide === 'YES' }" @click="selectedSide = 'YES'">
@@ -349,7 +348,7 @@ function confirmTrade() {
         <button class="button button--primary button--block" type="button" @click="confirmTrade">
           {{ connected ? `Enter ${selectedSide} call` : 'Connect wallet to enter' }} <span aria-hidden="true">&#8594;</span>
         </button>
-        <p class="dialog-note">Test SOL only. Nothing here carries real value, and the pit does not promise an outcome.</p>
+        <p class="dialog-note">Nothing here carries real value, and the pit does not promise an outcome.</p>
       </section>
     </div>
 
@@ -365,10 +364,10 @@ function confirmTrade() {
             <circle cx="32" cy="32" r="5.9" fill="currentColor" />
           </svg>
         </span>
-        <p class="kicker">// solana testnet</p>
+        <p class="kicker">// solana</p>
         <h2 id="wallet-title">STEP INTO THE PIT</h2>
         <p class="dialog-sub">
-          Attach a Solana wallet such as Phantom to read the board and place calls with test SOL.
+          Attach a Solana wallet such as Phantom to read the board and place calls.
           This preview does not move real funds.
         </p>
         <button class="button button--primary button--block" type="button" @click="connectWallet">
